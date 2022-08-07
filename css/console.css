@@ -1,0 +1,48 @@
+:root {
+    --display-h1-decoration: none; 
+    --primary-color:#e01a1a;
+    --invert-font-color: #fff; 
+}
+
+.terminal-prompt::after {
+    -webkit-animation: cursor 1s infinite;
+    animation: cursor 1s infinite;
+    width: 5px;
+}
+
+.terminal-prompt::before {
+    content: none;
+}
+
+.nav-icons a svg {
+    width: 25.6px;
+    height: 25.6px;
+}
+
+.nav-icons a svg {
+    width: 25.6px;
+    height: 25.6px;
+}
+.nav-icons a {
+    height: 25.6px;
+}
+
+.section-index {
+    margin-bottom: 30px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 10px;
+    border: 0px;
+
+}
+
+.footer hr {
+    margin-bottom: 10px;
+}
+
+.section-index ul, dl, p {
+    margin: 0;
+}
