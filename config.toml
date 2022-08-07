@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://rojbar.github.io/'
 languageCode = 'en-us'
 title = 'rojbar'
 theme = 'hugo-theme-console'
