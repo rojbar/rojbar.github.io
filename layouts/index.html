@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<section class="section-index">
+    <header>
+        <h1>About me</h1>
+    </header>
+    <p>
+        Software Engineer student, with knowledge in web application development, databases, software testing, object-oriented programming and desktop applications. With skills to work in a team and meet the established objectives. Interested in developing web applications.
+    </p>    
+</section>
+
+
+
+<section class="section-index">
+    <header>
+        <h1>Latest projects</h1>
+    </header>
+    <dl>
+    {{ with .Site.GetPage "/projects" }}
+    {{ range first 4 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+            <dt>
+                <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+            </dt>
+            <dd>
+                {{ .Summary }}
+            </dd>
+            <br>
+    {{ end }}
+    </dl>
+    {{ end }}
+</section>
+
+
+<section class="section-index">
+    <header>
+        <h1>Social networks</h1>
+    </header>
+    <ul>
+        {{ range .Site.Params.socialnetworks}}
+            <li><a href={{ .url }}> {{ .name }} </a></li> 
+        {{ end}}
+    </ul>
+</section>
+
+
+
+{{ end }}

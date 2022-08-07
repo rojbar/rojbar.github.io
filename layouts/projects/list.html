@@ -1,0 +1,23 @@
+{{ define "main" }}
+    <section class="section-index">
+        <header>
+            <h1>{{ .Page.Title }}</h1>
+        </header>
+        {{ .Content }}
+        <dl>
+        {{ range sort .Data.Pages "Date" "desc"}}
+            {{ if not .Params.private }}
+                <dt>
+                    <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+                </dt>
+                <dd>
+                    {{ .Summary }}
+                </dd>
+                <br>
+            {{ end }}
+        {{ end }}
+        </dl>
+
+    </section>
+
+{{ end }}
