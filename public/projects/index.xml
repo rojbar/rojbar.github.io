@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>rojbar</title>
-    <link>http://example.org/</link>
-    <description>Recent content on rojbar</description>
+    <title>Projects on rojbar</title>
+    <link>http://example.org/projects/</link>
+    <description>Recent content in Projects on rojbar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Aug 2022 21:39:54 -0500</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 12:48:38 -0500</lastBuildDate><atom:link href="http://example.org/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prestto</title>
       <link>http://example.org/projects/prestto/</link>
