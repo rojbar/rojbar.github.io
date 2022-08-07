@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rojbar</title>
-    <link>http://example.org/</link>
+    <link>https://rojbar.github.io/</link>
     <description>Recent content on rojbar</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 06 Aug 2022 21:39:54 -0500</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Aug 2022 21:39:54 -0500</lastBuildDate><atom:link href="https://rojbar.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Prestto</title>
-      <link>http://example.org/projects/prestto/</link>
+      <link>https://rojbar.github.io/projects/prestto/</link>
       <pubDate>Sat, 06 Aug 2022 21:39:54 -0500</pubDate>
       
-      <guid>http://example.org/projects/prestto/</guid>
+      <guid>https://rojbar.github.io/projects/prestto/</guid>
       <description>Web application that enables p2p lending.</description>
     </item>
     
     <item>
       <title>Yourbot</title>
-      <link>http://example.org/projects/yourbot/</link>
+      <link>https://rojbar.github.io/projects/yourbot/</link>
       <pubDate>Sat, 06 Aug 2022 21:39:54 -0500</pubDate>
       
-      <guid>http://example.org/projects/yourbot/</guid>
+      <guid>https://rojbar.github.io/projects/yourbot/</guid>
       <description>Bot for Discord.</description>
     </item>
     
     <item>
       <title>B Sat</title>
-      <link>http://example.org/projects/b-sat/</link>
+      <link>https://rojbar.github.io/projects/b-sat/</link>
       <pubDate>Sat, 06 Aug 2022 12:50:24 -0500</pubDate>
       
-      <guid>http://example.org/projects/b-sat/</guid>
+      <guid>https://rojbar.github.io/projects/b-sat/</guid>
       <description>Interpreted programming language.</description>
     </item>
     

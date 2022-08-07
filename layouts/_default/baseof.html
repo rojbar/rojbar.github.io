@@ -60,16 +60,27 @@
         {{ partial "footer.html" . }}
     </div>
     <script>
+      document.addEventListener("DOMContentLoaded",()=> {
+        if(localStorage.getItem("dark-theme"))
+          insertDarkTheme();
+      })
+    </script>
+
+    <script>
       function handleOnClick(){        
-        if(document.getElementById("toggler-theme").hasAttribute("dark"))
-        {
-            document.getElementById("toggler-theme").removeAttribute("dark")    
-            return document.styleSheets[document.styleSheets.length-1].deleteRule(1);
-        }
-            
-        document.getElementById("toggler-theme").setAttribute("dark", "");
-        document.styleSheets[document.styleSheets.length-1].insertRule(":root{--global-font-color: #e8e9ed; --background-color: #222225; --font-color: #e8e9ed; --invert-font-color: #222225; --secondary-color: #a3abba; --tertiary-color: #a3abba; --error-color: #ff3c74; --progress-bar-background: #3f3f44; --progress-bar-fill: #e01a1a; --code-bg-color: #3f3f44;}",1);   
-    }
+        console.log(localStorage.getItem("dark-theme"));
+        if(localStorage.getItem("dark-theme")){
+          localStorage.removeItem("dark-theme");
+          document.styleSheets[document.styleSheets.length-1].deleteRule(1);
+        }else{
+          localStorage.setItem("dark-theme", "set");
+          insertDarkTheme();
+        }        
+      }
+
+      function insertDarkTheme(){
+        document.styleSheets[document.styleSheets.length-1].insertRule(":root{--global-font-color: #e8e9ed; --background-color: #222225; --font-color: #e8e9ed; --invert-font-color: #222225; --secondary-color: #a3abba; --tertiary-color: #a3abba; --error-color: #ff3c74; --progress-bar-background: #3f3f44; --progress-bar-fill: #e01a1a; --code-bg-color: #3f3f44;}",1);
+      }
     </script>
   </body>
 </html>
