@@ -2,3 +2,20 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'rojbar'
 theme = 'hugo-theme-console'
+
+[[params.navlinks]]
+  name = 'projects/'
+  url = 'projects'
+
+[[params.socialnetworks]]
+  name = 'Github'
+  url = 'https://github.com/rojbar'
+
+[[params.socialnetworks]]
+  name = 'Linkedin'
+  url = 'https://www.linkedin.com/in/santiago-rojas-barreneche-431a0a192'
+
+[[params.socialnetworks]]
+  name = 'Mail'
+  url = 'mailto:rojbar.soft@gmail.com'
+
