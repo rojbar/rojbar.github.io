@@ -5,28 +5,29 @@
         <h1>About me</h1>
     </header>
     <p>
-        Software Engineer student, with knowledge in web application development, databases, software testing, object-oriented programming and desktop applications. With skills to work in a team and meet the established objectives. Interested in developing web applications.
-    </p>    
+        Full Stack Software Engineer. Experience with SCRUM, Go and Vue for developing web applications an distributed
+        systems.
+    </p>
 </section>
 
-
-
 <section class="section-index">
+    {{ with .Site.GetPage "/projects" }}
     <header>
-        <h1>Latest projects</h1>
+        <h1>Latest projects <a href="{{.Permalink}}">See more</a></h1>
     </header>
     <dl>
-    {{ with .Site.GetPage "/projects" }}
-    {{ range first 4 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-            <dt>
-                <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
-            </dt>
-            <dd>
-                {{ .Summary }}
-            </dd>
-            <br>
-    {{ end }}
+
+        {{ range first 4 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <dt>
+            <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
+        </dt>
+        <dd>
+            {{ .Summary }}
+        </dd>
+        <br>
+        {{ end }}
     </dl>
+
     {{ end }}
 </section>
 
@@ -37,7 +38,7 @@
     </header>
     <ul>
         {{ range .Site.Params.socialnetworks}}
-            <li><a href={{ .url }}> {{ .name }} </a></li> 
+        <li><a href={{ .url }}> {{ .name }} </a></li>
         {{ end}}
     </ul>
 </section>

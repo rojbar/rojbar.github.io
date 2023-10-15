@@ -2,10 +2,13 @@
 <h1>{{ .Title }}</h1>
 
 <section style="display: flex; flex-flow:column nowrap;">
-
-    <section style="display: flex; justify-content:space-between">
-        <section>
+    <section style="display: flex; justify-content:space-between;">
+        <section style="margin-right: 1%; margin-bottom: 1%;">
             {{ .Content }}
+            {{- with .Params.imageSrc -}}
+            {{ $res := resources.Get . }}
+            <img src="{{$res.Permalink}}" style="margin-top: 1%;">
+            {{- end -}}
         </section>
         <section>
             <table style="margin-top: 0px; margin-left:10px;">
