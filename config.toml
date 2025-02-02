@@ -17,5 +17,5 @@ theme = 'hugo-theme-console'
 
 [[params.socialnetworks]]
   name = 'Mail'
-  url = 'mailto:san.roj.bar@skiff.com'
+  url = 'mailto:meetme@rojbar.com'
 

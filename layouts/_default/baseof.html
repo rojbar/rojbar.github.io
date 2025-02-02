@@ -24,12 +24,8 @@
     {{- partial "favicon.html" . -}}
     {{ with .OutputFormats.Get "RSS" }}
       {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
-    {{ end }}
-    {{- partial "opengraph.html" . -}}
-    {{- partial "twitter_cards.html" . -}}
+    {{ end }} 
     {{ template "_internal/google_analytics.html" . }}
-
-    {{- partial "header.html" . -}}
     <script >
         if(localStorage.getItem("dark-theme"))
           document.styleSheets[document.styleSheets.length-1].insertRule(":root{--global-font-color: #e8e9ed; --background-color: #222225; --font-color: #e8e9ed; --invert-font-color: #222225; --secondary-color: #a3abba; --tertiary-color: #a3abba; --error-color: #ff3c74; --progress-bar-background: #3f3f44; --progress-bar-fill: #e01a1a; --code-bg-color: #3f3f44;}",1);
