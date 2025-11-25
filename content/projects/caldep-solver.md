@@ -7,7 +7,7 @@ technologies:
     - name: 'Minizinc'
       url: 'https://www.minizinc.org/'
 urlrepo: 'https://github.com/rojbar/caldep-solver'
-urldemo: 'https://rojbar.github.io/caldep-solver/'
+urldemo: 'https://rojbar.com/caldep-solver/'
 imageSrc: 'imgs/caldep-solver.png'
 ---
 There is a coming tournament and you need to setup a calendar so that each team

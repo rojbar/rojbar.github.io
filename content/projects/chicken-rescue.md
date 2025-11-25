@@ -9,7 +9,7 @@ technologies:
     - name: 'Typescript'
       url: 'https://www.typescriptlang.org/'
 urlrepo: 'https://github.com/rojbar/chicken-rescue'
-urldemo: 'https://rojbar.github.io/chicken-rescue/'
+urldemo: 'https://rojbar.com/chicken-rescue/'
 imageSrc: 'imgs/chicken-rescue.png'
 ---
 Chicken Rescue is a simple 2D game developed in phaser 3 using typescript.
